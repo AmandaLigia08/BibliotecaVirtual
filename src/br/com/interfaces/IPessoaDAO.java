@@ -5,10 +5,22 @@
  */
 package br.com.interfaces;
 
+import java.util.List;
+import br.com.model.bean.Pessoa;
+
 /**
  *
  * @author amand
  */
-public class IPessoaDAO {
-    
+public interface IPessoaDAO {
+
+    boolean create(Pessoa pessoa) throws Exception;
+
+    boolean delete(Pessoa pessoa) throws Exception;
+
+    List<Pessoa> list() throws Exception;
+
+    Pessoa search(int id) throws Exception;
+
+    void update(Pessoa pessoa) throws Exception;
 }

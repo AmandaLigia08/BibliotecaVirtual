@@ -5,10 +5,22 @@
  */
 package br.com.interfaces;
 
+import java.util.List;
+import br.com.model.bean.Autor;
+
 /**
  *
  * @author amand
  */
-public class IAutorDAO {
-    
+public interface IAutorDAO {
+
+    int create(Autor a) throws Exception;
+
+    boolean delete(Autor a) throws Exception;
+
+    List<Autor> list() throws Exception;
+
+    Autor search(int id) throws Exception;
+
+    boolean update(Autor a) throws Exception;
 }

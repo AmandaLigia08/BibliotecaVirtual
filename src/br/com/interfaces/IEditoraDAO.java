@@ -5,10 +5,22 @@
  */
 package br.com.interfaces;
 
+import java.util.List;
+import br.com.model.bean.Editora;
+
 /**
  *
  * @author amand
  */
-public class IEditoraDAO {
-    
+public interface IEditoraDAO {
+
+    int create(Editora editora) throws Exception;
+
+    boolean delete(Editora editora) throws Exception;
+
+    List<Editora> list() throws Exception;
+
+    Editora search(int id) throws Exception;
+
+    boolean update(Editora editora) throws Exception;
 }

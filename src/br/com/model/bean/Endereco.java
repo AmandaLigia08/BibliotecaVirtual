@@ -10,5 +10,57 @@ package br.com.model.bean;
  * @author amand
  */
 public class Endereco {
-    
+
+    private int id;
+    private String rua;
+    private String numero;
+    private String cidade;
+
+    public Endereco() {
+
+    }
+
+    public Endereco(String rua, String numero, String cidade) {
+        this.id = id;
+        this.rua = rua;
+        this.numero = numero;
+        this.cidade = cidade;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getRua() {
+        return this.rua;
+    }
+
+    public void setRua(String rua) {
+        this.rua = rua;
+    }
+
+    public String getNumero() {
+        return this.numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public String getCidade() {
+        return this.cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String toString() {
+        return "ENDERECO{" + "ID=" + id + ", RUA=" + rua + ", NUMERO=" + numero + ", CIDADE=" + cidade + '}';
+    }
+
 }

@@ -5,10 +5,24 @@
  */
 package br.com.interfaces;
 
+import java.util.List;
+import br.com.model.bean.Funcionario;
+
 /**
  *
  * @author amand
  */
-public class IFuncionarioDAO {
-    
+public interface IFuncionarioDAO {
+
+    boolean create(Funcionario funcionario) throws Exception;
+
+    boolean delete(Funcionario funcionario) throws Exception;
+
+    List<Funcionario> list() throws Exception;
+
+    Funcionario search(int id) throws Exception;
+
+    void update(Funcionario funcionario) throws Exception;
+
+    boolean verificarLogin(String login, String senha) throws Exception;
 }

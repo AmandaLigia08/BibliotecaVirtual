@@ -5,10 +5,37 @@
  */
 package br.com.util;
 
+import java.text.SimpleDateFormat;
+
 /**
  *
  * @author amand
  */
 public class Util {
-    
+
+    private static SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+
+    public static String dateToString(java.util.Date data) {
+        try {
+            return formatter.format(data);
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    public static java.util.Date stringToDate(String dataStr) {
+        try {
+            return formatter.parse(dataStr);
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    public static java.util.Date sqlParaDate(java.sql.Date data) {
+        return new java.util.Date(data.getTime());
+    }
+
+    public static java.sql.Date dateParaSql(java.util.Date data) {
+        return new java.sql.Date(data.getTime());
+    }
 }

@@ -9,6 +9,36 @@ package br.com.model.bean;
  *
  * @author amand
  */
-public class Sessao {
-    
+public class Secao {
+
+    private int id;
+    private String descricao;
+
+    public Secao() {
+    }
+
+    public Secao(int id, String descricao) {
+        this.id = id;
+        this.descricao = descricao;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String toString() {
+        return "SECAO{" + "ID=" + id + ", DESCRICAO=" + descricao + '}';
+    }
 }
