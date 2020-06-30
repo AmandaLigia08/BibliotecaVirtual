@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600" prefWidth="800" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.principal.FXMLPrincipalController">
+   <children>
+      <TabPane prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+            <Tab text="PRINCIPAL">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="19.0" layoutY="33.0" prefHeight="21.0" prefWidth="762.0" text="----- BIBLIOTECA VIRTUAL ----------------------------" AnchorPane.leftAnchor="19.0" />
+                        <Label layoutX="19.0" layoutY="54.0" prefHeight="25.0" prefWidth="443.0" text="----- FUNCIONALIDADES DESCRITAS ABAIXO  -----" AnchorPane.leftAnchor="19.0" />
+                        <Label layoutX="22.0" layoutY="499.0" prefHeight="30.0" prefWidth="757.0" text="----- PROJETO DE SISTEMAS DE INFORMAÇÕES 2020.1 -----" AnchorPane.bottomAnchor="42.0" />
+                        <Label layoutX="19.0" layoutY="79.0" prefHeight="25.0" prefWidth="443.0" text="1 - CADASTRO DE LIVRO " AnchorPane.leftAnchor="19.0" />
+                        <Label layoutX="22.0" layoutY="104.0" prefHeight="25.0" prefWidth="443.0" text="2- CADASTRO DE AUTOR " AnchorPane.leftAnchor="19.0" />
+                        <Label layoutX="22.0" layoutY="129.0" prefHeight="25.0" prefWidth="443.0" text="3- CADASTRO DE EDITORA " AnchorPane.leftAnchor="19.0" />
+                        <Label layoutX="22.0" layoutY="154.0" prefHeight="25.0" prefWidth="443.0" text="4- CADASTRO DE SEÇÃO " AnchorPane.leftAnchor="19.0" />
+                        <Label layoutX="22.0" layoutY="179.0" prefHeight="25.0" prefWidth="443.0" text="5- CADASTRO DE ALUNO " AnchorPane.leftAnchor="19.0" />
+                        <Label layoutX="22.0" layoutY="204.0" prefHeight="25.0" prefWidth="443.0" text="6- CADASTRO DE FUNCIONARIO " AnchorPane.leftAnchor="19.0" />
+                        <Label layoutX="22.0" layoutY="229.0" prefHeight="25.0" prefWidth="443.0" text="7- CADASTRO DE ENDEREÇO " AnchorPane.leftAnchor="19.0" />
+                        <Label layoutX="19.0" layoutY="254.0" prefHeight="25.0" prefWidth="443.0" text="8- CADASTRO EMPRESTIMO " AnchorPane.leftAnchor="19.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="LIVRO">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutY="3.0" prefHeight="568.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                          <tabs>
+                              <Tab text="PRINCIPAL">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="34.0" layoutY="36.0" prefHeight="17.0" prefWidth="223.0" text="OPÇÕES DE LIVRO" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="36.0" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                            <Tab text="CADASTRAR">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="66.0" layoutY="26.0" prefHeight="17.0" prefWidth="85.0" text="AUTOR" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="26.0" />
+                                          <ComboBox fx:id="cbAutor" layoutX="66.0" layoutY="56.0" prefHeight="25.0" prefWidth="212.0" promptText="AUTOR" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="56.0" />
+                                          <Separator layoutX="286.0" layoutY="2.0" orientation="VERTICAL" prefHeight="98.0" prefWidth="5.0" AnchorPane.topAnchor="2.0" />
+                                          <Label layoutX="297.0" layoutY="26.0" prefHeight="17.0" prefWidth="85.0" text="SEÇÃO" AnchorPane.leftAnchor="297.0" AnchorPane.rightAnchor="418.0" AnchorPane.topAnchor="26.0" />
+                                          <ComboBox fx:id="cbSecao" layoutX="297.0" layoutY="56.0" prefHeight="25.0" prefWidth="212.0" promptText="SEÇÃO" AnchorPane.leftAnchor="297.0" AnchorPane.topAnchor="56.0" />
+                                          <Separator layoutX="515.0" orientation="VERTICAL" prefHeight="98.0" prefWidth="5.0" AnchorPane.topAnchor="0.0" />
+                                          <Separator layoutY="98.0" prefHeight="5.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="98.0" />
+                                          <Label layoutX="297.0" layoutY="26.0" text="EDITORA" AnchorPane.leftAnchor="525.0" AnchorPane.rightAnchor="238.0" AnchorPane.topAnchor="26.0" />
+                                          <ComboBox fx:id="cbEditora" layoutX="524.0" layoutY="56.0" prefWidth="250.0" promptText="EDITORA" AnchorPane.leftAnchor="524.0" AnchorPane.topAnchor="56.0" />
+                                          <Label layoutX="66.0" layoutY="122.0" text="QUANTIDADE DE EXEMPLARES" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="122.0" />
+                                          <TextField fx:id="tfQuantidade" layoutX="67.0" layoutY="139.0" prefHeight="25.0" prefWidth="212.0" text="QUANTIDADE" AnchorPane.leftAnchor="67.0" AnchorPane.topAnchor="139.0" />
+                                          <Label layoutX="67.0" layoutY="164.0" text="EX: 69" AnchorPane.leftAnchor="67.0" AnchorPane.topAnchor="164.0" />
+                                          <Label layoutX="297.0" layoutY="122.0" text="EXEMPLARES DISPONIVEIS" AnchorPane.leftAnchor="297.0" AnchorPane.topAnchor="122.0" />
+                                          <TextField fx:id="tfDisponivel" layoutX="297.0" layoutY="139.0" prefHeight="25.0" prefWidth="212.0" text="DISPONIVEIS" AnchorPane.leftAnchor="297.0" AnchorPane.topAnchor="139.0" />
+                                          <Label layoutX="297.0" layoutY="164.0" text="EX: 60" AnchorPane.leftAnchor="297.0" AnchorPane.topAnchor="164.0" />
+                                          <Button layoutX="728.0" layoutY="500.0" mnemonicParsing="false" text="SALVAR" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="20.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="BUSCAR">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                            <Tab text="EDITAR">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="DELETAR">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="ALUNO">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutY="3.0" prefHeight="568.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                           <tabs>
+                              <Tab text="PRINCIPAL">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="21.0" layoutY="38.0" prefHeight="17.0" prefWidth="223.0" text="OPÇÕES DE ALUNO" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="36.0" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab text="CADASTRAR">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button fx:id="btnArquivarAluno" layoutX="734.0" layoutY="500.0" mnemonicParsing="false" text="SALVAR" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+                                          <TextField fx:id="tfCidade" layoutX="27.0" layoutY="43.0" prefHeight="25.0" prefWidth="212.0" text="CIDADE" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="43.0" />
+                                          <Label layoutX="27.0" layoutY="26.0" text="CIDADE" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="26.0" />
+                                          <Label layoutX="277.0" layoutY="26.0" text="RUA" AnchorPane.leftAnchor="277.0" AnchorPane.topAnchor="26.0" />
+                                          <TextField fx:id="tfRua" layoutX="277.0" layoutY="43.0" prefHeight="25.0" prefWidth="212.0" text="RUA" AnchorPane.leftAnchor="277.0" AnchorPane.topAnchor="43.0" />
+                                          <Label layoutX="509.0" layoutY="26.0" text="NUMERO" AnchorPane.leftAnchor="509.0" AnchorPane.topAnchor="26.0" />
+                                          <TextField fx:id="tfNumero" layoutX="509.0" layoutY="43.0" prefHeight="25.0" prefWidth="212.0" text="NUMERO" AnchorPane.leftAnchor="509.0" AnchorPane.topAnchor="43.0" />
+                                          <Separator layoutY="89.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="89.0" />
+                                          <TextField fx:id="tfNome" layoutX="27.0" layoutY="123.0" prefHeight="25.0" prefWidth="562.0" text="NOME COMPLETO" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="123.0" />
+                                          <TextField fx:id="tfNascimento" layoutX="606.0" layoutY="123.0" prefHeight="25.0" prefWidth="115.0" AnchorPane.leftAnchor="606.0" AnchorPane.topAnchor="123.0" />
+                                          <Label layoutX="606.0" layoutY="106.0" text="DATA DE NASCIMENTO" AnchorPane.leftAnchor="606.0" AnchorPane.topAnchor="106.0" />
+                                          <Separator layoutY="169.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="169.0" />
+                                          <Label layoutX="27.0" layoutY="180.0" text="Curso" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="180.0" />
+                                          <TextField fx:id="tfCurso" layoutX="27.0" layoutY="197.0" prefHeight="25.0" prefWidth="212.0" text="CURSO" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="197.0" />
+                                          <TextField fx:id="tfMatricula" layoutX="277.0" layoutY="197.0" prefHeight="25.0" prefWidth="212.0" text="MATRICULA" AnchorPane.leftAnchor="277.0" AnchorPane.topAnchor="197.0" />
+                                          <Label layoutX="277.0" layoutY="180.0" text="MATRICULA" AnchorPane.leftAnchor="277.0" AnchorPane.topAnchor="180.0" />
+                                          <Label layoutX="29.0" layoutY="106.0" text="NOME COMPLETO" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="106.0" />
+                                          <Label layoutX="29.0" layoutY="68.0" text="EX: Patos" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="68.0" />
+                                          <Label layoutX="284.0" layoutY="68.0" text="EX: Rua Placido Magalhães" AnchorPane.leftAnchor="277.0" AnchorPane.topAnchor="68.0" />
+                                          <Label layoutX="509.0" layoutY="68.0" text="EX: 50" AnchorPane.leftAnchor="509.0" AnchorPane.topAnchor="68.0" />
+                                          <Label layoutX="606.0" layoutY="148.0" text="EX: 11/06/2020" AnchorPane.leftAnchor="606.0" AnchorPane.topAnchor="148.0" />
+                                          <Label layoutX="44.0" layoutY="148.0" text="EX: Amanda Ligia dos Santos Araujo" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="150.0" />
+                                          <Label layoutX="29.0" layoutY="222.0" text="EX: Sistemas de Informação" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="222.0" />
+                                          <Label layoutX="284.0" layoutY="222.0" text="EX: 2016.2.007.004" AnchorPane.leftAnchor="277.0" AnchorPane.topAnchor="222.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="EDITAR">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="BUSCAR">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="DELETAR">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="FUNCIONARIO">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="568.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                           <tabs>
+                              <Tab text="PRINCIPAL">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="223.0" text="OPÇÕES DE FUNCIONARIO" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="36.0" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab text="CADASTRAR">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                           <Button fx:id="btnArquivarFuncionario" layoutX="734.0" layoutY="500.0" mnemonicParsing="false" text="SALVAR" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+                                          <Label layoutX="67.0" layoutY="29.0" text="CIDADE" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="26.0" />
+                                          <TextField layoutX="27.0" layoutY="43.0" prefHeight="25.0" prefWidth="212.0" text="CIDADE" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="561.0" AnchorPane.topAnchor="43.0" />
+                                          <Separator layoutY="79.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="89.0" />
+                                          <Label layoutX="27.0" layoutY="68.0" text="EX: Patos" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="726.0" AnchorPane.topAnchor="68.0" />
+                                          <Label layoutX="264.0" layoutY="26.0" text="RUA" AnchorPane.leftAnchor="277.0" AnchorPane.topAnchor="26.0" />
+                                          <TextField layoutX="277.0" layoutY="43.0" prefHeight="25.0" prefWidth="212.0" text="RUA" AnchorPane.leftAnchor="277.0" AnchorPane.topAnchor="43.0" />
+                                          <TextField layoutX="517.0" layoutY="43.0" prefHeight="25.0" prefWidth="212.0" text="NUMERO" AnchorPane.leftAnchor="509.0" AnchorPane.topAnchor="43.0" />
+                                          <Label layoutX="517.0" layoutY="26.0" text="NUMERO" AnchorPane.leftAnchor="509.0" AnchorPane.topAnchor="26.0" />
+                                          <Label layoutX="274.0" layoutY="68.0" text="EX: Rua Placido Magalhães" AnchorPane.leftAnchor="277.0" AnchorPane.topAnchor="68.0" />
+                                          <Label layoutX="517.0" layoutY="68.0" text="EX: 50" AnchorPane.leftAnchor="509.0" AnchorPane.topAnchor="68.0" />
+                                          <Label layoutX="64.0" layoutY="195.0" text="EX: Amanda Ligia dos Santos Araujo" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="150.0" />
+                                          <Label layoutX="64.0" layoutY="157.0" text="NOME COMPLETO" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="106.0" />
+                                          <TextField layoutX="27.0" layoutY="123.0" prefHeight="25.0" prefWidth="562.0" text="INFORME O NOME DO FUNCINARIO" />
+                                          <TextField layoutX="603.0" layoutY="123.0" prefHeight="25.0" prefWidth="115.0" AnchorPane.leftAnchor="606.0" AnchorPane.topAnchor="123.0" />
+                                          <Label layoutX="615.0" layoutY="106.0" text="DATA DE NASCIMENTO" AnchorPane.leftAnchor="606.0" AnchorPane.topAnchor="106.0" />
+                                          <Label layoutX="592.0" layoutY="150.0" text="" AnchorPane.leftAnchor="606.0" AnchorPane.topAnchor="106.0" />
+                                          <Label layoutX="592.0" layoutY="150.0" text="EX: 11/06/2020" AnchorPane.leftAnchor="606.0" AnchorPane.topAnchor="148.0" />
+                                          <Separator layoutY="167.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="169.0" />
+                                          <Label layoutX="27.0" layoutY="181.0" text="CARGO" />
+                                          <TextField layoutX="27.0" layoutY="198.0" prefHeight="25.0" prefWidth="212.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="EDITAR">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="BSUCAR">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="DELETAR">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="EMPRESTIMO">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutY="3.0" prefHeight="568.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="3.0">
+                           <tabs>
+                              <Tab text="PRINCIPAL">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="353.0" text="OPÇÕES DE EMPRESTIMOS" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="36.0" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab text="CADASTRAR">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                           <Button fx:id="btnArquivarEmprestimo" layoutX="734.0" layoutY="500.0" mnemonicParsing="false" text="SALVAR" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+                                          <Label layoutX="67.0" layoutY="29.0" text="CIDADE" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="26.0" />
+                                          <TextField layoutX="27.0" layoutY="43.0" prefHeight="25.0" prefWidth="212.0" text="CIDADE" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="561.0" AnchorPane.topAnchor="43.0" />
+                                          <Separator layoutY="79.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="89.0" />
+                                          <Label layoutX="27.0" layoutY="68.0" text="EX: Patos" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="726.0" AnchorPane.topAnchor="68.0" />
+                                          <Label layoutX="264.0" layoutY="26.0" text="RUA" AnchorPane.leftAnchor="277.0" AnchorPane.topAnchor="26.0" />
+                                          <TextField layoutX="277.0" layoutY="43.0" prefHeight="25.0" prefWidth="212.0" text="RUA" AnchorPane.leftAnchor="277.0" AnchorPane.topAnchor="43.0" />
+                                          <TextField layoutX="517.0" layoutY="43.0" prefHeight="25.0" prefWidth="212.0" text="NUMERO" AnchorPane.leftAnchor="509.0" AnchorPane.topAnchor="43.0" />
+                                          <Label layoutX="517.0" layoutY="26.0" text="NUMERO" AnchorPane.leftAnchor="509.0" AnchorPane.topAnchor="26.0" />
+                                          <Label layoutX="274.0" layoutY="68.0" text="EX: Rua Placido Magalhães" AnchorPane.leftAnchor="277.0" AnchorPane.topAnchor="68.0" />
+                                          <Label layoutX="517.0" layoutY="68.0" text="EX: 50" AnchorPane.leftAnchor="509.0" AnchorPane.topAnchor="68.0" />
+                                          <Label layoutX="64.0" layoutY="195.0" text="EX: Amanda Ligia dos Santos Araujo" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="150.0" />
+                                          <Label layoutX="64.0" layoutY="157.0" text="NOME COMPLETO" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="106.0" />
+                                          <TextField layoutX="27.0" layoutY="123.0" prefHeight="25.0" prefWidth="562.0" text="INFORME O NOME DO FUNCINARIO" />
+                                          <TextField layoutX="603.0" layoutY="123.0" prefHeight="25.0" prefWidth="115.0" AnchorPane.leftAnchor="606.0" AnchorPane.topAnchor="123.0" />
+                                          <Label layoutX="615.0" layoutY="106.0" text="DATA DE NASCIMENTO" AnchorPane.leftAnchor="606.0" AnchorPane.topAnchor="106.0" />
+                                          <Label layoutX="592.0" layoutY="150.0" text="" AnchorPane.leftAnchor="606.0" AnchorPane.topAnchor="106.0" />
+                                          <Label layoutX="592.0" layoutY="150.0" text="EX: 11/06/2020" AnchorPane.leftAnchor="606.0" AnchorPane.topAnchor="148.0" />
+                                          <Separator layoutY="167.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="169.0" />
+                                          <Label layoutX="27.0" layoutY="181.0" text="CARGO" />
+                                          <TextField layoutX="27.0" layoutY="198.0" prefHeight="25.0" prefWidth="212.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="EDITAR">
+                                 <content>
+                                    <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="BUSCAR">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="DELETAR">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

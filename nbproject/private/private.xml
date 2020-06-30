@@ -3,15 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/BibliotecaVirtual/test/br/com/model/dao/PessoaDAOTest.java</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/BibliotecaVirtual/src/br/com/principal/MenuPrincipal.java</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/BibliotecaVirtual/src/br/com/properties/stringsErro.properties</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/BibliotecaVirtual/test/br/com/model/dao/AutorDAOTest.java</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/BibliotecaVirtual/test/br/com/model/dao/EnderecoDAOTest.java</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/BibliotecaVirtual/test/br/com/model/dao/LivroDAOTest.java</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/BibliotecaVirtual/test/br/com/model/dao/SecaoDAOTest.java</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/BibliotecaVirtual/src/br/com/properties/stringsSucesso.properties</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/BibliotecaVirtual/src/br/com/properties/configuracao.properties</file>
+            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/BibliotecaVirtual/src/br/com/principal/FXMLPrincipalController.java</file>
+            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/BibliotecaVirtual/src/br/com/principal/FXMLPrincipal.fxml</file>
         </group>
     </open-files>
 </project-private>
